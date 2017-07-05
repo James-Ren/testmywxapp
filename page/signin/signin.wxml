@@ -1,0 +1,18 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">欢迎你，{{userInfo.nickName}}！</text>
+  </view>
+  <view class="userli">
+    <navigator class="userorder-title" url="/page/detailinfo/detailinfo"> <view class="left-title">个人资料</view>
+    <view class="right-arrow">》</view>
+    </navigator>
+    
+  </view>
+  <view class="userli">
+    <navigator class="userorder-title" url="/page/orderlist/orderlist"> <view class="left-title">我的订单</view>
+    <view class="right-arrow">》</view>
+    </navigator>
+    
+  </view>
+</view>

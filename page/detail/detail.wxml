@@ -1,0 +1,22 @@
+<view class="wx-view_KHAWVZ" data-c_e_id="wx_viewb7dbd52e">
+    <swiper autoplay="True" class="wx-swiper_Mn3JMs" data-c_e_id="wx_swiper43d9f094" indicator-dots="True" lower-threshold="50">
+        <swiper-item class="c-full wx-swiper-item_F6vCx8" data-c_e_id="wx_swiper_item015a5cd2">
+            <image bindtap="tap_d5808da3" class="wx-image_HsAX8s2" data-c_e_id="wx_image194006a3" mode="aspectFill" src="{{detail_data.feature_img}}" style="background-image: url({{detail_data.feature_img}}); background-size: cover; background-position: center center; background-repeat: no-repeat; "/>
+        </swiper-item>
+    </swiper>
+    <text class="c-block wx-text_V55JEt" data-c_e_id="wx_textbf43d609">{{detail_data.name}}</text>
+    <view class="wx-view_Ipiy3Y" data-c_e_id="wx_viewa6f000ae">
+        <view class="wx-navigator_8s8V9p" bindtap="goshop" data-id="{{product_id}}" hover-class="navigator-hover">
+            <text class="c-block wx-text_EPMInA" data-c_e_id="wx_text50749bcb">￥{{detail_data.price}} 去购买</text>
+        </view>
+        
+    </view>
+    
+    <view class="commentlistwrap" data-c_e_id="wx_view_c359400f">
+        <view class="wx-view_8NFuqw" data-c_e_id="wx_view_664566c4">
+            <text class="c-block wx-text_t7lDiK" data-c_e_id="wx_text68f182cf">详情</text>
+        </view>
+<import src="../../common/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:detail_desc.nodes}}"/>
+    </view>
+</view>

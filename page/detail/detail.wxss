@@ -1,0 +1,4 @@
+@import "../../common/wxParse.wxss";
+page { 
+    position: relative;  
+}
