@@ -70,9 +70,9 @@ App({
     wx.request({
       url: obj.url,
       data: obj.data,
-      method: 'POST',
+      method: obj.method||'GET',
       header: {
-        'content-type': 'application/x-www-form-urlencoded'
+        'content-type': obj.method = 'POST' ? 'application/x-www-form-urlencoded' : 'application/json'
       },
       success: function (res) {
         console.log(res);
